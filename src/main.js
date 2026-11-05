@@ -43,7 +43,7 @@ controls.dampingFactor = 0.05
 // 6. Carregador del model 3D (tree.glb, format GLTF/GLB)
 const loader = new GLTFLoader()
 loader.load(
-  '/tree.glb',
+  `${import.meta.env.BASE_URL}tree.glb`,
   (gltf) => {
     const model = gltf.scene
 
